@@ -1,0 +1,2 @@
+# laravel-enterprise-rma-returns-and-refund-manager
+Enterprise Returns &amp; Refund Manager (RMA) SaaS in PHP 8.5, Laravel 13 &amp; Filament v5. Full reverse logistics, 90 modular capabilities, multi-tenant &amp; multi-branch BORIS, AI fraud risk scoring, warranty repairs, diagnostic workshop, double-entry financial journals, digital store credit wallet, and multilingual PDF shipping labels &amp; credit notes.
