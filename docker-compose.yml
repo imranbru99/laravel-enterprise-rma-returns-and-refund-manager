@@ -1,0 +1,137 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: returns-and-refund-manager:latest
+    container_name: rma_app
+    restart: unless-stopped
+    working_dir: /var/www/html
+    environment:
+      APP_NAME: "Returns & Refund Manager"
+      APP_ENV: production
+      APP_DEBUG: "false"
+      APP_URL: http://localhost:8080
+      DB_CONNECTION: mysql
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_DATABASE: rma_saas
+      DB_USERNAME: rma_user
+      DB_PASSWORD: rma_secure_password
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      QUEUE_CONNECTION: redis
+      CACHE_STORE: redis
+      SESSION_DRIVER: redis
+    volumes:
+      - storage_data:/var/www/html/storage
+    depends_on:
+      - db
+      - redis
+    networks:
+      - rma_network
+
+  web:
+    image: nginx:alpine
+    container_name: rma_nginx
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - storage_data:/var/www/html/storage:ro
+    depends_on:
+      - app
+    networks:
+      - rma_network
+
+  queue:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rma_queue_worker
+    restart: unless-stopped
+    command: php artisan queue:work redis --sleep=3 --tries=3 --timeout=90
+    working_dir: /var/www/html
+    environment:
+      APP_ENV: production
+      DB_CONNECTION: mysql
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_DATABASE: rma_saas
+      DB_USERNAME: rma_user
+      DB_PASSWORD: rma_secure_password
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      QUEUE_CONNECTION: redis
+    depends_on:
+      - app
+      - redis
+      - db
+    networks:
+      - rma_network
+
+  scheduler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: rma_scheduler
+    restart: unless-stopped
+    command: sh -c "while true; do php artisan schedule:run --verbose --no-interaction & sleep 60; done"
+    working_dir: /var/www/html
+    environment:
+      APP_ENV: production
+      DB_CONNECTION: mysql
+      DB_HOST: db
+      DB_PORT: 3306
+      DB_DATABASE: rma_saas
+      DB_USERNAME: rma_user
+      DB_PASSWORD: rma_secure_password
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+    depends_on:
+      - app
+      - redis
+      - db
+    networks:
+      - rma_network
+
+  db:
+    image: mysql:8.0
+    container_name: rma_mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: rma_saas
+      MYSQL_USER: rma_user
+      MYSQL_PASSWORD: rma_secure_password
+      MYSQL_ROOT_PASSWORD: rma_root_secure_password
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - rma_network
+
+  redis:
+    image: redis:7-alpine
+    container_name: rma_redis
+    restart: unless-stopped
+    volumes:
+      - redis_data:/data
+    ports:
+      - "6379:6379"
+    networks:
+      - rma_network
+
+networks:
+  rma_network:
+    driver: bridge
+
+volumes:
+  mysql_data:
+    driver: local
+  redis_data:
+    driver: local
+  storage_data:
+    driver: local
