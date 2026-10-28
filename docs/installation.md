@@ -11,8 +11,8 @@
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/imrandevbd/returns-and-refund-manager-rma-workflow.git
-cd returns-and-refund-manager-rma-workflow
+git clone https://github.com/imranbru99/laravel-enterprise-rma-returns-and-refund-manager.git
+cd laravel-enterprise-rma-returns-and-refund-manager
 ```
 
 ### 2. Configure Environment

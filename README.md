@@ -8,7 +8,7 @@
   <a href="https://filamentphp.com"><img src="https://img.shields.io/badge/Filament-5.x-F59E0B?style=for-the-badge&logo=filament&logoColor=white" alt="Filament 5"></a>
   <a href="https://tailwindcss.com"><img src="https://img.shields.io/badge/Tailwind_CSS-3.x-38BDF8?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS"></a>
   <a href="https://redis.io"><img src="https://img.shields.io/badge/Redis-7.x-DC2626?style=for-the-badge&logo=redis&logoColor=white" alt="Redis"></a>
-  <a href="https://github.com/imrandevbd/returns-and-refund-manager-rma-workflow/actions"><img src="https://img.shields.io/badge/Tests-19%20Passed%20(100%25)-10B981?style=for-the-badge&logo=githubactions&logoColor=white" alt="Automated Tests"></a>
+  <a href="https://github.com/imranbru99/laravel-enterprise-rma-returns-and-refund-manager/actions"><img src="https://img.shields.io/badge/Tests-19%20Passed%20(100%25)-10B981?style=for-the-badge&logo=githubactions&logoColor=white" alt="Automated Tests"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="MIT License"></a>
 </p>
 
@@ -112,7 +112,7 @@ Plus:
   <img src="docs/assets/lifecycle-flow.svg" alt="Automated RMA Lifecycle & State Machine Progression" width="100%">
 </p>
 
-Every return moves through an atomic, validation-enforced state machine defined in [`Rma::canTransitionTo()`](file:///home/imran/project/returns-and-refund-manager-rma-workflow/app/Models/Rma.php#L158-L185):
+Every return moves through an atomic, validation-enforced state machine defined in [`Rma::canTransitionTo()`](app/Models/Rma.php#L158-L185):
 
 ```mermaid
 stateDiagram-v2
@@ -323,13 +323,13 @@ Every business has unique operational needs. A small boutique needs simple refun
 
 Built to take full advantage of specialized Laravel packages:
 
-- **[`imrandevbd/laravel-ai-hub`](https://packagist.org/packages/imrandevbd/laravel-ai-hub) (v1.7.1)**: Multi-provider AI gateway integrated into [`AiAssistantService`](file:///home/imran/project/returns-and-refund-manager-rma-workflow/app/Services/AiAssistantService.php) for intelligent return reason extraction, predictive fraud scoring (0-100), and policy support RAG. Automatic heuristic fallback ensures zero downtime when API keys are not supplied.
-- **[`imrandevbd/laravel-unicode-pdf`](https://packagist.org/packages/imrandevbd/laravel-unicode-pdf)**: Integrated into [`PdfDocumentService`](file:///home/imran/project/returns-and-refund-manager-rma-workflow/app/Services/PdfDocumentService.php) to generate high-resolution PDF return shipping labels, RMA drop-off slips, and credit notes with full internationalized UTF-8 support for English, Bengali, and Arabic scripts.
+- **[`imrandevbd/laravel-ai-hub`](https://packagist.org/packages/imrandevbd/laravel-ai-hub) (v1.7.1)**: Multi-provider AI gateway integrated into [`AiAssistantService`](app/Services/AiAssistantService.php) for intelligent return reason extraction, predictive fraud scoring (0-100), and policy support RAG. Automatic heuristic fallback ensures zero downtime when API keys are not supplied.
+- **[`imrandevbd/laravel-unicode-pdf`](https://packagist.org/packages/imrandevbd/laravel-unicode-pdf)**: Integrated into [`PdfDocumentService`](app/Services/PdfDocumentService.php) to generate high-resolution PDF return shipping labels, RMA drop-off slips, and credit notes with full internationalized UTF-8 support for English, Bengali, and Arabic scripts.
 - **[`imrandevbd/laravel-universal-slug`](https://packagist.org/packages/imrandevbd/laravel-universal-slug)**: Generates multi-language internationalized URL slugs for products, knowledge documents, and public resources.
 - **[`imrandevbd/laravel-ai-catalog`](https://packagist.org/packages/imrandevbd/laravel-ai-catalog)**: Provides automated product catalog metadata enrichment, attribute extraction, and returnability tagging.
 - **Architectural Adapters**:
-  - [`DrutogotiPerformanceAdapter`](file:///home/imran/project/returns-and-refund-manager-rma-workflow/app/Domain/Performance/DrutogotiPerformanceAdapter.php): High-performance Redis query caching and opcode optimization adapter.
-  - [`AttendanceHubAdapter`](file:///home/imran/project/returns-and-refund-manager-rma-workflow/app/Domain/Workforce/AttendanceHubAdapter.php): Workforce shift scheduling, attendance check-in, and operational workload distribution adapter.
+  - [`DrutogotiPerformanceAdapter`](app/Domain/Performance/DrutogotiPerformanceAdapter.php): High-performance Redis query caching and opcode optimization adapter.
+  - [`AttendanceHubAdapter`](app/Domain/Workforce/AttendanceHubAdapter.php): Workforce shift scheduling, attendance check-in, and operational workload distribution adapter.
 
 ---
 
@@ -364,8 +364,8 @@ The platform comes pre-seeded with 3 realistic enterprise organizations and 8 de
 ### 1. Clone & Setup Environment
 ```bash
 # Clone the repository
-git clone https://github.com/imrandevbd/returns-and-refund-manager-rma-workflow.git
-cd returns-and-refund-manager-rma-workflow
+git clone https://github.com/imranbru99/laravel-enterprise-rma-returns-and-refund-manager.git
+cd laravel-enterprise-rma-returns-and-refund-manager
 
 # Copy environment file and generate application key
 cp .env.example .env
