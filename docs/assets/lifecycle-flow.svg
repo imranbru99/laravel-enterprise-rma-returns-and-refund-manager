@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 240" width="100%" height="240">
+  <defs>
+    <linearGradient id="flowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1100" height="240" rx="14" fill="#0b1120" stroke="#334155" stroke-width="1"/>
+
+  <text x="35" y="38" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800">
+    Automated RMA Lifecycle &amp; State Machine Progression
+  </text>
+  <text x="35" y="58" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">
+    Every step is governed by atomic validations, role permissions, and immutable event auditing:
+  </text>
+
+  <!-- Flow Steps -->
+  <g transform="translate(35, 80)">
+    <!-- Step 1 -->
+    <rect x="0" y="0" width="180" height="115" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+    <circle cx="24" cy="24" r="12" fill="#0284c7"/>
+    <text x="24" y="28" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="800" text-anchor="middle">1</text>
+    <text x="44" y="28" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">Self-Service</text>
+    <text x="14" y="55" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">Portal / Guest Lookup</text>
+    <text x="14" y="73" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10">Customer submits order item with photos</text>
+    <rect x="14" y="88" width="75" height="16" rx="4" fill="#0369a1"/>
+    <text x="51" y="99" fill="#e0f2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" text-anchor="middle">RMA Initiated</text>
+
+    <!-- Connector 1 -->
+    <path d="M185 58 L205 58" stroke="#38bdf8" stroke-width="2" stroke-dasharray="3,3"/>
+    <polygon points="207,58 201,54 201,62" fill="#38bdf8"/>
+
+    <!-- Step 2 -->
+    <rect x="210" y="0" width="180" height="115" rx="10" fill="#1e293b" stroke="#818cf8" stroke-width="1"/>
+    <circle cx="234" cy="24" r="12" fill="#4f46e5"/>
+    <text x="234" y="28" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="800" text-anchor="middle">2</text>
+    <text x="254" y="28" fill="#818cf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">AI Policy Guard</text>
+    <text x="224" y="55" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">Auto-Approval / Risk</text>
+    <text x="224" y="73" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10">Window check + fraud score calculation</text>
+    <rect x="224" y="88" width="85" height="16" rx="4" fill="#3730a3"/>
+    <text x="266" y="99" fill="#e0e7ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" text-anchor="middle">Risk Score: 12 (Low)</text>
+
+    <!-- Connector 2 -->
+    <path d="M395 58 L415 58" stroke="#818cf8" stroke-width="2" stroke-dasharray="3,3"/>
+    <polygon points="417,58 411,54 411,62" fill="#818cf8"/>
+
+    <!-- Step 3 -->
+    <rect x="420" y="0" width="180" height="115" rx="10" fill="#1e293b" stroke="#c084fc" stroke-width="1"/>
+    <circle cx="444" cy="24" r="12" fill="#9333ea"/>
+    <text x="444" y="28" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="800" text-anchor="middle">3</text>
+    <text x="464" y="28" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">Label &amp; Courier</text>
+    <text x="434" y="55" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">Prepaid Unicode PDF</text>
+    <text x="434" y="73" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10">Barcode label / drop-off QR dispatched</text>
+    <rect x="434" y="88" width="90" height="16" rx="4" fill="#581c87"/>
+    <text x="479" y="99" fill="#fae8ff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" text-anchor="middle">Tracking Synced</text>
+
+    <!-- Connector 3 -->
+    <path d="M605 58 L625 58" stroke="#c084fc" stroke-width="2" stroke-dasharray="3,3"/>
+    <polygon points="627,58 621,54 621,62" fill="#c084fc"/>
+
+    <!-- Step 4 -->
+    <rect x="630" y="0" width="180" height="115" rx="10" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/>
+    <circle cx="654" cy="24" r="12" fill="#d97706"/>
+    <text x="654" y="28" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="800" text-anchor="middle">4</text>
+    <text x="674" y="28" fill="#f59e0b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">Intake &amp; QC</text>
+    <text x="644" y="55" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">Barcode Gun &amp; Grade</text>
+    <text x="644" y="73" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10">Condition checklist, seal &amp; serial check</text>
+    <rect x="644" y="88" width="90" height="16" rx="4" fill="#78350f"/>
+    <text x="689" y="99" fill="#fef3c7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" text-anchor="middle">Grade A (Pristine)</text>
+
+    <!-- Connector 4 -->
+    <path d="M815 58 L835 58" stroke="#f59e0b" stroke-width="2" stroke-dasharray="3,3"/>
+    <polygon points="837,58 831,54 831,62" fill="#f59e0b"/>
+
+    <!-- Step 5 -->
+    <rect x="840" y="0" width="180" height="115" rx="10" fill="#1e293b" stroke="#10b981" stroke-width="1"/>
+    <circle cx="864" cy="24" r="12" fill="#059669"/>
+    <text x="864" y="28" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="800" text-anchor="middle">5</text>
+    <text x="884" y="28" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700">Settlement</text>
+    <text x="854" y="55" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">Refund / Wallet / Swap</text>
+    <text x="854" y="73" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10">Idempotent payout + double journal</text>
+    <rect x="854" y="88" width="95" height="16" rx="4" fill="#064e3b"/>
+    <text x="901" y="99" fill="#d1fae5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" text-anchor="middle">Credit Note Emitted</text>
+  </g>
+</svg>

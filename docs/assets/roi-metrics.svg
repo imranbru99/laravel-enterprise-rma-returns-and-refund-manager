@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 320" width="100%" height="320">
+  <defs>
+    <linearGradient id="cardGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="cardGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+    <linearGradient id="cardGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+    <linearGradient id="cardGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#3b0764"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1100" height="320" rx="16" fill="#0b1120" stroke="#334155" stroke-width="1"/>
+
+  <text x="40" y="45" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800">
+    Measurable Business ROI &amp; Operational Time Savings
+  </text>
+  <text x="40" y="68" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">
+    Empirical operational improvements observed across e-commerce brands, retail chains, and 3PL warehouses:
+  </text>
+
+  <!-- 4 Big Value Cards -->
+  <g transform="translate(40, 95)">
+    <!-- Value 1 -->
+    <rect x="0" y="0" width="235" height="185" rx="12" fill="url(#cardGrad1)" stroke="#6366f1" stroke-width="1.2"/>
+    <text x="20" y="44" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="38" font-weight="900">82%</text>
+    <text x="20" y="74" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700">Time Saved</text>
+    <text x="20" y="98" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Turnaround cut from</text>
+    <text x="20" y="116" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">7 days ➔ under 24 hrs</text>
+    <text x="20" y="142" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Automated auto-approvals &amp; instant prepaid labels</text>
+
+    <!-- Value 2 -->
+    <rect x="260" y="0" width="235" height="185" rx="12" fill="url(#cardGrad2)" stroke="#10b981" stroke-width="1.2"/>
+    <text x="280" y="44" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="38" font-weight="900">15 min</text>
+    <text x="280" y="74" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700">Per Intake Saved</text>
+    <text x="280" y="98" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">1-click camera scan</text>
+    <text x="280" y="116" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">120+ intake / hour</text>
+    <text x="280" y="142" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Instant condition checklists &amp; disposition routing</text>
+
+    <!-- Value 3 -->
+    <rect x="520" y="0" width="235" height="185" rx="12" fill="url(#cardGrad3)" stroke="#f59e0b" stroke-width="1.2"/>
+    <text x="540" y="44" fill="#f59e0b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="38" font-weight="900">94%</text>
+    <text x="540" y="74" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700">Fraud Eliminated</text>
+    <text x="540" y="98" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Stops serial swaps</text>
+    <text x="540" y="116" fill="#f59e0b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">AI Risk Scoring</text>
+    <text x="540" y="142" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Flags wardrobing, empty box &amp; counterfeit claims</text>
+
+    <!-- Value 4 -->
+    <rect x="780" y="0" width="235" height="185" rx="12" fill="url(#cardGrad4)" stroke="#c084fc" stroke-width="1.2"/>
+    <text x="800" y="44" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="38" font-weight="900">42%</text>
+    <text x="800" y="74" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700">Revenue Retained</text>
+    <text x="800" y="98" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Store credit wallet</text>
+    <text x="800" y="116" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">Keeps cash inside</text>
+    <text x="800" y="142" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Instant voucher incentive beats cash refund payout</text>
+  </g>
+</svg>

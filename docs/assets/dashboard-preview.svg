@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 640" width="100%" height="640">
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="barGrad2" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Browser Window Wrapper -->
+  <rect width="1100" height="640" rx="14" fill="#0b1120" stroke="#334155" stroke-width="1" filter="url(#shadow)"/>
+
+  <!-- Window Header / Titlebar -->
+  <rect width="1100" height="42" rx="14" fill="#1e293b"/>
+  <rect y="28" width="1100" height="14" fill="#1e293b"/>
+  <circle cx="24" cy="21" r="6" fill="#ef4444"/>
+  <circle cx="44" cy="21" r="6" fill="#f59e0b"/>
+  <circle cx="64" cy="21" r="6" fill="#10b981"/>
+  <rect x="360" y="9" width="380" height="24" rx="6" fill="#0f172a" stroke="#334155" stroke-width="0.5"/>
+  <text x="550" y="25" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" text-anchor="middle">https://retailsphere.rma-suite.com/admin</text>
+
+  <!-- Left Sidebar -->
+  <rect x="0" y="42" width="220" height="598" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Sidebar Brand -->
+  <g transform="translate(18, 62)">
+    <rect width="32" height="32" rx="8" fill="#3b82f6"/>
+    <path d="M9 16L14 21L23 11" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="42" y="21" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="700">RMA Operations</text>
+  </g>
+
+  <!-- Sidebar Nav Links -->
+  <g transform="translate(18, 120)">
+    <!-- Active Link -->
+    <rect x="0" y="0" width="184" height="34" rx="8" fill="#1e293b"/>
+    <text x="32" y="21" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">Dashboard</text>
+    <circle cx="16" cy="17" r="4" fill="#38bdf8"/>
+
+    <!-- Returns Group -->
+    <text x="8" y="60" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" letter-spacing="1">RETURNS &amp; CLAIMS</text>
+    
+    <text x="32" y="85" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Return Authorizations</text>
+    <rect x="156" y="73" width="24" height="16" rx="8" fill="#ef4444"/>
+    <text x="168" y="85" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" text-anchor="middle">12</text>
+
+    <text x="32" y="115" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Orders &amp; Receipts</text>
+    <text x="32" y="145" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Customers</text>
+    <text x="32" y="175" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Products Catalog</text>
+    <text x="32" y="205" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Return Policies</text>
+
+    <!-- Warehouse Group -->
+    <text x="8" y="245" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" letter-spacing="1">WAREHOUSE &amp; QC</text>
+    <text x="32" y="270" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Inspections &amp; Grading</text>
+    <text x="32" y="300" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Disposition Routing</text>
+    <text x="32" y="330" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Branch Inventory</text>
+
+    <!-- After-Sales Group -->
+    <text x="8" y="370" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" letter-spacing="1">AFTER-SALES &amp; REPAIR</text>
+    <text x="32" y="395" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Warranty Claims</text>
+    <text x="32" y="425" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Repair Workshop</text>
+
+    <!-- System Group -->
+    <text x="8" y="465" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" letter-spacing="1">SETTINGS</text>
+    <text x="32" y="490" fill="#a855f7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">⚡ 90-Module Manager</text>
+  </g>
+
+  <!-- Main Content Area -->
+  <g transform="translate(240, 60)">
+    <!-- Top Bar -->
+    <text x="0" y="20" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="700">Operations Control Center</text>
+    <text x="0" y="38" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">RetailSphere Bangladesh • Dhaka Central Hub Branch</text>
+
+    <!-- Stat Metric Cards (4 cards) -->
+    <g transform="translate(0, 55)">
+      <!-- Card 1 -->
+      <rect x="0" y="0" width="195" height="90" rx="10" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
+      <text x="16" y="28" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">ACTIVE RMAS</text>
+      <text x="16" y="60" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="800">1,248</text>
+      <text x="16" y="78" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600">↑ 14% vs last month</text>
+
+      <!-- Card 2 -->
+      <rect x="210" y="0" width="195" height="90" rx="10" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
+      <text x="226" y="28" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">INSPECTION RATE</text>
+      <text x="226" y="60" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="800">98.4%</text>
+      <text x="226" y="78" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600">Avg 4.2 hrs turn-around</text>
+
+      <!-- Card 3 -->
+      <rect x="420" y="0" width="195" height="90" rx="10" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
+      <text x="436" y="28" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">STORE CREDIT RETAINED</text>
+      <text x="436" y="60" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="800">$48.5K</text>
+      <text x="436" y="78" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600">42% customers chose credit</text>
+
+      <!-- Card 4 -->
+      <rect x="630" y="0" width="200" height="90" rx="10" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
+      <text x="646" y="28" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">AI FRAUD PREVENTED</text>
+      <text x="646" y="60" fill="#f59e0b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="800">$18.2K</text>
+      <text x="646" y="78" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600">38 serial swaps caught</text>
+    </g>
+
+    <!-- Middle Section: Chart & Table -->
+    <g transform="translate(0, 160)">
+      <!-- Left: Chart Card -->
+      <rect x="0" y="0" width="380" height="200" rx="10" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
+      <text x="18" y="26" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">Returns by Primary Reason</text>
+      
+      <!-- Bars -->
+      <g transform="translate(20, 50)">
+        <!-- Bar 1 -->
+        <rect x="0" y="90" width="36" height="50" rx="4" fill="url(#barGrad)"/>
+        <text x="18" y="155" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" text-anchor="middle">Defect</text>
+        <text x="18" y="82" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" text-anchor="middle">38%</text>
+
+        <!-- Bar 2 -->
+        <rect x="65" y="60" width="36" height="80" rx="4" fill="url(#barGrad2)"/>
+        <text x="83" y="155" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" text-anchor="middle">Sizing</text>
+        <text x="83" y="52" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" text-anchor="middle">28%</text>
+
+        <!-- Bar 3 -->
+        <rect x="130" y="100" width="36" height="40" rx="4" fill="url(#barGrad)"/>
+        <text x="148" y="155" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" text-anchor="middle">Remorse</text>
+        <text x="148" y="92" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" text-anchor="middle">16%</text>
+
+        <!-- Bar 4 -->
+        <rect x="195" y="115" width="36" height="25" rx="4" fill="url(#barGrad2)"/>
+        <text x="213" y="155" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" text-anchor="middle">Not As</text>
+        <text x="213" y="107" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" text-anchor="middle">11%</text>
+
+        <!-- Bar 5 -->
+        <rect x="260" y="125" width="36" height="15" rx="4" fill="url(#barGrad)"/>
+        <text x="278" y="155" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" text-anchor="middle">Damaged</text>
+        <text x="278" y="117" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" text-anchor="middle">7%</text>
+      </g>
+
+      <!-- Right: Recent Return Queue -->
+      <g transform="translate(400, 0)">
+        <rect x="0" y="0" width="430" height="200" rx="10" fill="url(#cardBg)" stroke="#334155" stroke-width="1"/>
+        <text x="18" y="26" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">Live Intake Queue (Omnichannel)</text>
+
+        <!-- Table Row 1 -->
+        <g transform="translate(18, 48)">
+          <text x="0" y="14" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">RMA-202610-DAC1</text>
+          <text x="120" y="14" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Sony WH-1000XM5</text>
+          <rect x="250" y="2" width="70" height="18" rx="9" fill="#1e3a8a"/>
+          <text x="285" y="14" fill="#60a5fa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" text-anchor="middle">INSPECTING</text>
+          <text x="340" y="14" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700">$399.00</text>
+          <line x1="0" y1="26" x2="390" y2="26" stroke="#334155" stroke-width="0.5"/>
+        </g>
+
+        <!-- Table Row 2 -->
+        <g transform="translate(18, 85)">
+          <text x="0" y="14" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">RMA-202610-CTG2</text>
+          <text x="120" y="14" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Nike Air Zoom 42</text>
+          <rect x="250" y="2" width="70" height="18" rx="9" fill="#14532d"/>
+          <text x="285" y="14" fill="#4ade80" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" text-anchor="middle">EXCHANGED</text>
+          <text x="340" y="14" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700">$140.00</text>
+          <line x1="0" y1="26" x2="390" y2="26" stroke="#334155" stroke-width="0.5"/>
+        </g>
+
+        <!-- Table Row 3 -->
+        <g transform="translate(18, 122)">
+          <text x="0" y="14" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">RMA-202610-SYL3</text>
+          <text x="120" y="14" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Mechanical KB RGB</text>
+          <rect x="250" y="2" width="70" height="18" rx="9" fill="#701a75"/>
+          <text x="285" y="14" fill="#f472b6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" text-anchor="middle">REFUNDED</text>
+          <text x="340" y="14" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700">$120.00</text>
+          <line x1="0" y1="26" x2="390" y2="26" stroke="#334155" stroke-width="0.5"/>
+        </g>
+
+        <!-- Table Row 4 -->
+        <g transform="translate(18, 159)">
+          <text x="0" y="14" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">RMA-202610-DAC4</text>
+          <text x="120" y="14" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">MacBook Pro M3 Max</text>
+          <rect x="250" y="2" width="70" height="18" rx="9" fill="#713f12"/>
+          <text x="285" y="14" fill="#fde047" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" text-anchor="middle">REPAIRING</text>
+          <text x="340" y="14" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700">$3,499.00</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Bottom Feature Callout Strip -->
+    <g transform="translate(0, 380)">
+      <rect x="0" y="0" width="830" height="42" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <circle cx="20" cy="21" r="5" fill="#10b981"/>
+      <text x="36" y="26" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">Double-Entry Financial Journals Active: Debit $4,158.00 = Credit $4,158.00 (Zero Out-of-Balance Discrepancies)</text>
+    </g>
+  </g>
+</svg>
